@@ -1,0 +1,119 @@
+git version
+shows the version of git installed in pc
+
+exit
+closes git
+
+git help
+returns a list of different help options
+
+git help config
+takes you to git-config(1) Manual Page
+
+pwd
+shows present working directory 
+
+git config --global user.name "Abdullah Omar"
+set global username
+
+git config --global user.email "fishilike.fish@gmail.com"
+set global email for user
+
+git config --global --list
+show what configurations have been done in git
+
+cat
+prints out the contents of a file
+
+cat ~/.gitconfig
+'~' specifies home directory
+this will print out the global config settings which is saved as a file
+
+git innit //Initialize Local Git Repositary
+
+git add <file> //Add file(s) to index
+
+git status //check status of working tree
+
+git commit //commit changes to index
+
+git push //push to remote Repositary
+
+git pull //pull latest from remote Repositary
+
+git clone //clone remote Repositary into new directory
+
+touch //create a new file into the folder
+eg => touch fish.css
+
+mkdir //creates a new folder into the folder
+eg => mkdir new_Folder
+
+ls //shows all files and folders
+
+git add <filename> //add file to git Repositary staging area
+
+git status //will show what has been committed and what has been not
+
+git rm --cached <filename> //remove file from staging area
+eg => git rm --cached fish.css
+
+git add *.<file extension> //add all files of the given extension to staging area
+eg => git add *.html //will add all files of html extension to staging area
+
+git add . //add all files from the folder to staging area
+
+**Note: when a change is made into the file make sure to add that file again
+eg => -lets say there is a fish.html file 
+      -we write some code in it
+      -then we add it to the staging area
+      -after that we make some changes in the fish.html file
+      -this updated file is not in the staging area but the old one is
+      -we can check by using the 'git status' command
+      -if we want to put the updated file into the staging area then add that file again using 'git add fish.html' command
+
+Commiting:
+git commit 
+press 'i'
+Initial Commit 
+press 'esc'
+type ':wq'
+press Enter
+
+**Note: just like staging area for actual commiting we have to commit again as well for new updated files
+				commit after putting files on staging area
+
+Another way to Commiting an updated file after putting it in staging area:
+git commit -m 'changed fish.html' //or adding anythign in the ' ' will do the commit 
+
+clear //clears the command line
+
+Branching:
+git branch new_branch //create a new branch by the name 'new_branch'
+git checkout new_branch //move to 'new_branch'
+git checkout master //go to master branch
+
+Merging branches:
+//From master branch:
+git merge new_branch //merge with 'new_branch'
+//Enter a message or comment if necessary
+press esc
+type ':wq'
+press Enter
+
+git remote add origin https://github.com/hotmailbelike/Git-and-Git-Practice.git
+//add the remote Repositary using the link given
+
+git remote //shows remote Repositary
+
+git push -u origin master //push the local Repositary to remote Repositary
+
+git push //commit files to remote Repositary
+
+git clone https://github.com/hotmailbelike/Git-and-Git-Practice.git
+//download the whole Repositary as folder in directory
+
+git pull //download and merge with local master branch
+
+**Note: if you want to put new files or folders into remote Repositary then make sure to pull the Repositary first then push it again
+
